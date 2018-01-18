@@ -1,0 +1,57 @@
+<div class="container">
+
+    <h1>{{> page/title}}</h1>
+    <p>Node Express Handlebars</p>
+    <hr><br>
+
+
+    <form method="post" action="/route1">
+	    <button class="btn btn-default" data-toggle="modal" data-target="#">Button One</button>
+    </form>
+    
+    <form method="post" action="/route2">
+    	<button class="btn btn-default" data-toggle="modal" data-target="#">Button Two</button>
+    </form>
+
+    <form method="post" action="/route3">
+    	<button class="btn btn-default" data-toggle="modal" data-target="#">Button Three</button>
+    </form>    
+
+    <button class="btn btn-default" data-toggle="modal" data-target="#myModal">Button Modal</button>
+      
+
+    <form method="post" action="/route4">
+      <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Modal</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="form-group">
+                        <label for="pwd">Number Input:</label>
+                        <input type="number" class="form-control" id="days" name="days" placeholder="Enter number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                      <input type="submit" value="Log In" class="btn btn-default" ></input>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+    </form>
+
+
+
+    {{!-- {{> page/nav}} --}}
+</div>
